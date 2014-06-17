@@ -1,7 +1,7 @@
-TidyDataProject
+Tidy Data Project
 ===============
 
-The run_analysis.R script is run in R using the source() function. It assumes that the zip file containing the data has been downloaded and extracted. The script performs the following functions:
+The run_analysis.R script assumes that the zip file containing the data has been downloaded and extracted. It must be run from the directory that contains the top level directory created during decompression (UCI HAR Dataset). The script performs the following functions:
 
 1. Reads the X_test.txt and X_train.txt data files and combines them into a single data.frame
 

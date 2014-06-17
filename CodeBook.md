@@ -15,10 +15,12 @@ and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to 
 Similarly, the acceleration signal was then separated into body and gravity acceleration signals 
 (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner 
 frequency of 0.3 Hz.  
+>
 >Subsequently, the body linear acceleration and angular velocity were derived in time to obtain 
 Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these 
 three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, 
-tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).  
+tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+> 
 >Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing 
 fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. 
 (Note the 'f' to indicate frequency domain signals). 
@@ -46,6 +48,10 @@ fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fB
 
 Data
 ----
+The final dataset consists of data merged from seven sources:
+* Variable data (two "X_" text files, test and train)
+* Subject data (two "subject_" text files, test and train)
+* Activity data (two "y_" text files, test and train, and the activity_labels text file)
 
 Transformations
 ---------------

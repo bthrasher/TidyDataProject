@@ -37,5 +37,5 @@ remove(subs1,subs2,subs)
 # Create a second, independent tidy data set 
 # with the average of each variable for each activity and subject
 fout <- aggregate(dat[,3:ncol(dat)],list(subjectID=dat$Subject,activity=dat$Activity),mean)
-write.csv(fout,"UCI HAR Dataset/TidyDataOutput.txt",row.names=FALSE)
+write.csv(fout,"UCI HAR Dataset/tidy_means.txt",row.names=FALSE)
 remove(dat,fout)
